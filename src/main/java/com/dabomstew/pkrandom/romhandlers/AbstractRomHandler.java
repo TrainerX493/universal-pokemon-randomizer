@@ -352,12 +352,17 @@ public abstract class AbstractRomHandler implements RomHandler {
         // non-special stat gen1 pokemon
         pokes.get(15).attack = 90; // BEEDRILL
         pokes.get(18).speed = 101; // PIDGEOT
+        pokes.get(24).attack = 95; // ARBOK
         pokes.get(25).defense = 40; // PIKACHU
         pokes.get(26).speed = 110; // RAICHU
         pokes.get(31).attack = 92; // NIDOQUEEN
         pokes.get(34).attack = 102; // NIDOKING
+        pokes.get(51).attack = 100; // DUGTRIO
         pokes.get(62).attack = 95; // POLIWRATH
         pokes.get(76).attack = 120; // GOLEM
+        pokes.get(83).attack = 90; // FARFETCH'D
+        pokes.get(85).speed = 110; // DODRIO
+        pokes.get(85).speed = 150; // ELECTRODE
 
         // behavior regarding special stat changes
         // depending on whether this is actually gen1 or not.
@@ -384,15 +389,38 @@ public abstract class AbstractRomHandler implements RomHandler {
             pokes.get(71).spdef = 70; // VICTREEBEL
 
             // gen 2
+            pokes.get(164).spatk = 86; // NOCTOWL
+            pokes.get(168).spdef = 70; // ARIADOS
             pokes.get(181).defense = 85; // AMPHAROS
             pokes.get(182).defense = 95; // BELLOSSOM
             pokes.get(184).spatk = 60; // AZUMARILL
             pokes.get(189).spdef = 95; // JUMPLUFF
+            pokes.get(211).defense = 85; // QWILFISH
+            pokes.get(219).hp = 60; // MAGCARGO
+            pokes.get(219).spatk = 90; // MAGCARGO
+            pokes.get(222).hp = 65; // CORSOLA
+            pokes.get(222).defense = 95; // CORSOLA
+            pokes.get(222).spdef = 95; // CORSOLA
+            pokes.get(226).hp = 85; // MANTINE
 
             // gen 3
             if (generationOfPokemon() >= 3) {
                 pokes.get(267).spatk = 100; // BEAUTIFLY
+                pokes.get(277).spatk = 75; // SWELLOW
+                pokes.get(279).spatk = 95; // PELIPPER
+                pokes.get(284).spatk = 100; // MASQUERAIN
+                pokes.get(284).speed = 80; // MASQUERAIN
                 pokes.get(295).spdef = 73; // EXPLOUD
+                pokes.get(301).speed = 90; // DELCATTY
+                pokes.get(313).defense = 75; // VOLBEAT
+                pokes.get(313).spdef = 85; // VOLBEAT
+                pokes.get(314).defense = 75; // ILLUMISE
+                pokes.get(314).spdef = 85; // ILLUMISE
+                pokes.get(337).hp = 90; // LUNATONE
+                pokes.get(338).hp = 90; // SOLROCK
+                pokes.get(358).hp = 75; // CHIMECHO
+                pokes.get(358).defense = 80; // CHIMECHO
+                pokes.get(358).spdef = 90; // CHIMECHO
                 }
 
             // gen 4
@@ -406,10 +434,15 @@ public abstract class AbstractRomHandler implements RomHandler {
                 pokes.get(508).attack = 110; // STOUTLAND
                 pokes.get(521).attack = 115; // UNFEZANT
                 pokes.get(526).spdef = 80; // GIGALITH
+                pokes.get(527).hp = 65; // WOOBAT
                 pokes.get(537).attack = 95; // SEISMITOAD
                 pokes.get(542).spdef = 80; // LEAVANNY
                 pokes.get(545).attack = 100; // SCOLIPEDE
                 pokes.get(553).defense = 80; // KROOKODILE
+                pokes.get(558).attack = 105; // CRUSTLE
+                pokes.get(614).attack = 130; // BEARTIC
+                pokes.get(615).hp = 80; // WOOBAT
+                pokes.get(615).defense = 50; // CRYOGONAL
                 }
             }
         }
