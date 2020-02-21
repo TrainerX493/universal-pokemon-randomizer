@@ -106,7 +106,7 @@ public interface RomHandler {
     // multiplier randomly to allow for more variety in evolution strength.
     public void randomizeCompletelyPokemonStats(boolean evolutionSanity);
     
-    // Update base stats to gen6
+    // Update base stats to gen7/8
     public void updatePokemonStats();
 
     // Give a random Pokemon who's in this game
